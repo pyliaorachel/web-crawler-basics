@@ -1,0 +1,90 @@
+2017-04-20 01:31:21 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: scrapybot)
+2017-04-20 01:31:21 [scrapy.utils.log] INFO: Overridden settings: {'SPIDER_LOADER_WARN_ONLY': True, 'LOG_FILE': 'output.log'}
+2017-04-20 01:31:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-04-20 01:31:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-04-20 01:31:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-04-20 01:31:21 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-04-20 01:31:21 [scrapy.core.engine] INFO: Spider opened
+2017-04-20 01:31:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-04-20 01:31:21 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-04-20 01:31:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/login> (referer: None)
+2017-04-20 01:31:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://twitter.com/> from <POST https://twitter.com/sessions>
+2017-04-20 01:31:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/> (referer: https://twitter.com/login)
+2017-04-20 01:31:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/followers> (referer: https://twitter.com/)
+2017-04-20 01:31:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/followers>
+{'name': u'Rachel Liao'}
+2017-04-20 01:31:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/Vivian_hwyik/followers> (referer: https://twitter.com/followers)
+2017-04-20 01:31:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/Ciciyiwen/followers> (referer: https://twitter.com/followers)
+2017-04-20 01:31:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/rayhuang0107/followers> (referer: https://twitter.com/followers)
+2017-04-20 01:31:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/Vivian_hwyik/followers>
+{'name': u'Vivian Yi'}
+2017-04-20 01:31:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/Ciciyiwen/followers>
+{'name': u'Cici GU'}
+2017-04-20 01:31:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://twitter.com/rayhuang0107/followers> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2017-04-20 01:31:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/rayhuang0107/followers>
+{'name': u'\u9ec3\u5411\u777f Ray Huang'}
+2017-04-20 01:31:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/ConstantineChe6/followers> (referer: https://twitter.com/Ciciyiwen/followers)
+2017-04-20 01:31:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/Sneaker2Deals/followers> (referer: https://twitter.com/Vivian_hwyik/followers)
+2017-04-20 01:31:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/ConstantineChe6/followers>
+{'name': u'Constantine Chen'}
+2017-04-20 01:31:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/Grace_Huaimeng/followers> (referer: https://twitter.com/Vivian_hwyik/followers)
+2017-04-20 01:31:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/Sneaker2Deals/followers>
+{'name': u'SneakerLink'}
+2017-04-20 01:31:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/Grace_Huaimeng/followers>
+{'name': u'Grace Li'}
+2017-04-20 01:31:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/jadecyh/followers> (referer: https://twitter.com/Vivian_hwyik/followers)
+2017-04-20 01:31:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/christine_zhn/followers> (referer: https://twitter.com/Vivian_hwyik/followers)
+2017-04-20 01:31:26 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2017-04-20 01:31:26 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2017-04-20 01:31:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/Dreama_Zhang/followers> (referer: https://twitter.com/Vivian_hwyik/followers)
+2017-04-20 01:31:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/Linda_RUOHAN/followers> (referer: https://twitter.com/Vivian_hwyik/followers)
+2017-04-20 01:31:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/gyamfialexblog/followers> (referer: https://twitter.com/Vivian_hwyik/followers)
+2017-04-20 01:31:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/jadecyh/followers>
+{'name': u'JadeChen'}
+2017-04-20 01:31:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/christine_zhn/followers>
+{'name': u'Zheng Hening'}
+2017-04-20 01:31:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/Dreama_Zhang/followers>
+{'name': u'\u5f20\u96e8\u6674'}
+2017-04-20 01:31:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/Linda_RUOHAN/followers>
+{'name': u'LI RUOHAN'}
+2017-04-20 01:31:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/gyamfialexblog/followers>
+{'name': u'gyamfi alexander'}
+2017-04-20 01:31:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/wanglu99/followers> (referer: https://twitter.com/Vivian_hwyik/followers)
+2017-04-20 01:31:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/Maggie_KE_/followers> (referer: https://twitter.com/Vivian_hwyik/followers)
+2017-04-20 01:31:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/Wencyclopedian/followers> (referer: https://twitter.com/Vivian_hwyik/followers)
+2017-04-20 01:31:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/wanglu99/followers>
+{'name': u'Wang Lu'}
+2017-04-20 01:31:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/Maggie_KE_/followers>
+{'name': u'Maggie'}
+2017-04-20 01:31:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/Wencyclopedian/followers>
+{'name': u'\u6587\u57a0'}
+2017-04-20 01:31:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/freeaibot/followers> (referer: https://twitter.com/rayhuang0107/followers)
+2017-04-20 01:31:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/barry615/followers> (referer: https://twitter.com/Vivian_hwyik/followers)
+2017-04-20 01:31:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/freeaibot/followers>
+{'name': u'Free AI Bot'}
+2017-04-20 01:31:27 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2017-04-20 01:31:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/itsvvickyy/followers> (referer: https://twitter.com/Ciciyiwen/followers)
+2017-04-20 01:31:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/SitioWP/followers> (referer: https://twitter.com/Ciciyiwen/followers)
+2017-04-20 01:31:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/wjy45281/followers> (referer: https://twitter.com/Ciciyiwen/followers)
+2017-04-20 01:31:27 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://twitter.com/MyEmbroids/followers> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'CHUNK_LENGTH' state, still expecting more data to get to 'FINISHED' state.>]
+2017-04-20 01:31:27 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://twitter.com/Vincent_CT4/followers> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'CHUNK_LENGTH' state, still expecting more data to get to 'FINISHED' state.>]
+2017-04-20 01:31:27 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://twitter.com/wallace_hsieh/followers> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'CHUNK_LENGTH' state, still expecting more data to get to 'FINISHED' state.>]
