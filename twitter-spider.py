@@ -1,4 +1,5 @@
 import scrapy
+import config
 
 level = 3
 
@@ -10,7 +11,7 @@ class TweeterSpider(scrapy.Spider):
         return scrapy.FormRequest.from_response(
             response,
             formcss='.signin',
-            formdata={'session[username_or_email]': 'rachel5566kk@gmail.com', 'session[password]': 'xul4284g'},
+            formdata={'session[username_or_email]': config.TWITTER_USERNAME, 'session[password]': config.TWITTER_PASSWORD},
             callback=self.after_login
         )
 
