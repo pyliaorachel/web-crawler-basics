@@ -1,2 +1,0 @@
-TWITTER_USERNAME = 'rachel5566kk@gmail.com'
-TWITTER_PASSWORD = 'xul4284g'
